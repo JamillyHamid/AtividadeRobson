@@ -71,10 +71,6 @@ async function alterarLimite(id, limite) {
 
 async function runApp() {
   await connectDatabase();
-
-  await createCliente('Victor', 200.00);
-  await createCliente('Leandro', 250.00);
-
   await listCliente();
 
   rl.question('Deseja alterar o limite de qual usuário? Digite o ID correspondente ao cliente: ', (id) => {
